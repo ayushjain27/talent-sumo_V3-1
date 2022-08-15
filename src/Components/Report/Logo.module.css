@@ -1,0 +1,14 @@
+.heading {
+  border-bottom: 2px solid #ffc107;
+  width: max-content;
+}
+
+@media (max-width: 770px) {
+  .heading {
+    width: auto;
+  }
+
+  .header {
+    display: grid !important;
+  }
+}

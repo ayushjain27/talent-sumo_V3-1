@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+}
+
+.card {
+    border: none !important;
+}
+
+.search {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    border-bottom: 3px solid #ced4da;
+}
+
+.heading {
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    margin: 2px 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content {
+    width: 20%;
+    height: 15%;
+    margin: 2px 4px;
+    text-align: center;
+}
+
+@media (max-width: 767.5px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .header {
+        display: inline-grid !important;
+        grid-gap: 0.5rem;
+    }
+
+    .heading {
+        width: auto !important;
+    }
+}

@@ -1,0 +1,58 @@
+.modal {
+    height: 500px;
+    overflow: auto;
+}
+
+.row1 {
+    padding: 2px 5px;
+}
+
+.col1 {
+    background-color: #ebebeb;
+    padding: 6px;
+    height: 60px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 4px;
+}
+
+.col2 {
+    border: 1px solid #000;
+    height: 60px;
+    text-align: center;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col3 {
+    color: white;
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.headingNotify {
+    border-bottom: 2px solid #000;
+}
+
+.headingMsg {
+    background-color: #acacac;
+    border-bottom: 2px solid #acacac;
+}
+
+@media (max-width: 767.5px) {
+    .right {
+        margin-top: 2rem;
+    }
+}

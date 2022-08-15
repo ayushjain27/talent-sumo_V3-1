@@ -1,0 +1,11 @@
+@media(max-width: 768px) {
+    .table {
+        font-size: x-small;
+    }
+}
+
+@media(max-width: 468px) {
+    .table {
+        font-size: xx-small;
+    }
+}

@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(248, 249, 250);
+  overflow-x: hidden;
+}
+
+p {
+  color: #6c757d !important;
+}
+
+input,
+textarea,
+select {
+  text-decoration: none !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.btn,
+.btn-close {
+  text-decoration: none !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #6c757d !important;
+  text-decoration: none !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.interaction:focus {
+  border-color: #acacac !important;
+}
+
+.form-check-input:checked {
+  background-color: #6c757d !important;
+  border-radius: 0 !important;
+  border-color: #6c757d !important;
+}
