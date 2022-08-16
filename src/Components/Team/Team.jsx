@@ -24,7 +24,7 @@ const Team = () => {
             </style>
             <div className="container d-flex justify-content-between mt-5">
                 <h3>Team Member Status</h3>
-                <button onClick={handleInvite} className="btn btn-warning">
+                <button onClick={handleInvite} className="btn btn-dark">
                     Invite User
                 </button>
             </div>
@@ -49,7 +49,6 @@ const Team = () => {
                             <div className="card-body">
                                 <div className="mt-3 d-flex justify-content-between">
                                     <div className="d-flex gap-2">
-
                                         <button
                                             type="submit"
                                             className="btn btn-success button"
@@ -67,7 +66,7 @@ const Team = () => {
                                         </button>
                                     </div>
                                     <div>
-                                        <button className="btn btn-primary button">
+                                        <button className="btn btn-outline-secondary button">
                                             Generate Link
                                         </button>
                                     </div>
@@ -80,7 +79,7 @@ const Team = () => {
 
             <div className="container mt-4">
                 <table className="table table-bordered">
-                    <thead className="bg-warning border-warning">
+                    <thead className="table-secondary">
                         <tr>
                             <th scope="col">S. No</th>
                             <th scope="col">Invitation Sent</th>
