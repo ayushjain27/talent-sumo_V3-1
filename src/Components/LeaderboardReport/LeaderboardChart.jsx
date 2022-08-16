@@ -5,8 +5,8 @@ const LeaderboardChart = () => {
   return (
     <>
       <h3 className="text-center mb-3">LEADERBOARD CHART-1</h3>
-      <table className='table table-striped table-bordered text-center'>
-        <thead className="table-warning">
+      <table className='table table-bordered text-center'>
+        <thead className="table-secondary">
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Likeability</th>
@@ -44,8 +44,8 @@ const LeaderboardChart = () => {
         </tbody>
       </table>
       <h3 className="text-center mt-5 mb-3">LEADERBOARD CHART-2</h3>
-      <table className={`${styles.table} table table-striped table-bordered text-center`}>
-        <thead className="table-warning">
+      <table className={`${styles.table} table  table-bordered text-center`}>
+        <thead className="table-secondary">
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Content_Score</th>
@@ -76,7 +76,7 @@ const LeaderboardChart = () => {
       </table>
       <div className="mt-5 container">
         <p align='justify' className="mb-4">Best Regards,</p>
-        <p align='justify'>Team <span className="fw-bold">Talent <span className="bg-warning p-2">Sumo</span></span></p>
+        <p align='justify'>Team <span className="fw-bold text-dark">Talent <span className="bg-dark text-white p-2">Sumo</span></span></p>
       </div>
     </>
   );

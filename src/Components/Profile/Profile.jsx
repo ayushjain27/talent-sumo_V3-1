@@ -44,7 +44,7 @@ const Profile = () => {
                                     <label htmlFor="formFile" className="form-label">Upload Profile Picture</label>
                                     <input className="form-control" type="file" id="formFile" />
                                 </div> */}
-                {/* <button  className='btn btn-warning button'>Upload</button> */}
+                {/* <button  className='btn btn-dark button'>Upload</button> */}
                 <FaUser
                   onMouseEnter={mouseEnter}
                   onMouseLeave={mouseLeave}

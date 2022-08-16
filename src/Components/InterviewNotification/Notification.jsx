@@ -69,8 +69,8 @@ const Notification = () => {
                                         <textarea className="form-control interaction" id="completion" rows="1"></textarea>
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="warning" className="form-label fw-bold">Bot Warning Message</label>
-                                        <textarea className="form-control interaction" id="warning" rows="1"></textarea>
+                                        <label htmlFor="dark" className="form-label fw-bold">Bot dark Message</label>
+                                        <textarea className="form-control interaction" id="dark" rows="1"></textarea>
                                     </div>
                                 </form>
                             </div>

@@ -30,36 +30,36 @@ const Track = () => {
             <div className="modal-body" style={style}>
               <div className="container">
                 <div className="d-flex justify-content-center gap-2 flex-wrap" style={{ cursor: "pointer" }}>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
-                  <span className="badge bg-warning">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
+                  <span className="badge bg-dark">Reliance JIO - sales</span>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Track = () => {
                 >
                   Close
                 </button>
-                <button type="button" className="btn btn-warning mx-1">
+                <button type="button" className="btn btn-dark mx-1">
                   Save changes
                 </button>
               </div>

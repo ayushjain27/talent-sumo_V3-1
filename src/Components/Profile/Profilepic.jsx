@@ -69,7 +69,7 @@ const Profilepic = () => {
               >
                 Close
               </button>
-              <button type="button" className="btn btn-warning">
+              <button type="button" className="btn btn-dark">
                 Save changes
               </button>
             </div> */}

@@ -8,8 +8,8 @@ const Certificate = () => {
         <>
             <div className="container mt-5">
                 <div className="d-grid col-10 mx-auto">
-                    <div className="card border-warning">
-                        <div className={`${styles.cardHeader} card-header bg-warning text-center`}>
+                    <div className="card border-dark">
+                        <div className={`${styles.cardHeader} card-header bg-dark text-center`}>
                             <h3>CERTIFICATE</h3>
                             <h5>OF INTERACTION TITLE</h5>
                         </div>

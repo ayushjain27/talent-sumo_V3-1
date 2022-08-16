@@ -6,7 +6,7 @@ const InteractionScorecard = () => {
         <>
             <h3 className='text-center mb-4'>INTERACTION SCORECARD</h3>
             <table className={`${styles.table} table table-bordered text-center`}>
-                <thead className='table-warning'>
+                <thead className='table-secondary'>
                     <tr>
                         <th scope="col">Likeability</th>
                         <th scope="col">Charm</th>

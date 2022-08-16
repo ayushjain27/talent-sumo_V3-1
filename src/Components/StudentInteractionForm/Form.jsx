@@ -59,7 +59,7 @@ const Form = () => {
     <>
       {/* <div style={displays}>
         <div className="d-grid col-md-5 mx-auto">
-          <div className="card border-warning bg-warning">
+          <div className="card border-dark bg-dark">
             <div className="card-body">
               <BiError className="bg-white d-flex justify-content-center mx-auto rounded-circle p-2 fs-1 fw-bold" />
               <p className="card-text text-center mt-3">Your time has been expired !!</p>

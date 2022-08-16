@@ -9,7 +9,7 @@ const LeaderboardReport = () => {
   return (
     <>
       <div className="container my-5">
-        <div className="card border-warning">
+        <div className="card border-dark">
           <div className="card-body">
             <Logo />
             <hr />

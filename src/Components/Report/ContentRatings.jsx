@@ -13,7 +13,7 @@ const ContentRatings = () => {
                     accuracy in his answers.
                 </p>
                 <table className="table table-bordered text-center">
-                    <thead className='table-warning'>
+                    <thead className='table-secondary'>
                         <tr>
                             <th scope="col">Match Score</th>
                             <th scope="col">Meaning</th>
@@ -40,7 +40,7 @@ const ContentRatings = () => {
                 </table>
                 <h5 className='mt-5 mb-3'>Question Specific Content Ratings :</h5>
                 <table className="table table-bordered text-center mb-5">
-                    <thead className='table-warning'>
+                    <thead className='table-secondary'>
                         <tr>
                             <th scope="col">Question #</th>
                             <th scope="col">Rating</th>
@@ -57,7 +57,7 @@ const ContentRatings = () => {
                         </tr>
                     </tbody>
                 </table>
-                <div className='card-footer border-warning text-end'>
+                <div className='card-footer border-dark text-end'>
                     <strong>Overall Content Rating :</strong> <code>Content_score</code> of a <code>Interaction_ID</code>
                 </div>
             </div>

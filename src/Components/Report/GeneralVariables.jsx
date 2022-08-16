@@ -12,8 +12,8 @@ const GeneralVariables = () => {
                 <h3 className='text-center mb-3'>GENERAL VARIABLES</h3>
                 <div className="row row-cols-1 row-cols-md-2 justify-content-center g-4">
                     <div className="col">
-                        <div className="card border-warning h-100">
-                            <h5 className="card-header border-warning bg-warning"><AiFillDashboard className={`me-1 ${styles.icon}`} />Pace</h5>
+                        <div className="card border-dark h-100">
+                            <h5 className="card-header border-dark bg-dark text-white"><AiFillDashboard className={`me-1 ${styles.icon}`} />Pace</h5>
                             <div className="card-body">
                                 <p align="justify" className='card-text'>
                                     <strong>Words per minute : </strong>
@@ -28,8 +28,8 @@ const GeneralVariables = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card border-warning h-100">
-                            <h5 className="card-header border-warning bg-warning"><FaVolumeUp className={`me-1 ${styles.icon}`} />Volume & Pitch</h5>
+                        <div className="card border-dark h-100">
+                            <h5 className="card-header border-dark bg-dark text-white"><FaVolumeUp className={`me-1 ${styles.icon}`} />Volume & Pitch</h5>
                             <div className="card-body">
                                 <p align="justify" className='card-text'>
                                     <strong>Volume Scale (0-100) : </strong>
@@ -58,8 +58,8 @@ const GeneralVariables = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card border-warning h-100">
-                            <h5 className="card-header border-warning bg-warning"><FaCloud className={`${styles.icon} me-1`} />Word Cloud</h5>
+                        <div className="card border-dark h-100">
+                            <h5 className="card-header border-dark bg-dark text-white"><FaCloud className={`${styles.icon} me-1`} />Word Cloud</h5>
                             <div className="card-body">
                                 <p align="justify" className='card-text'>
                                     <strong>Takeaway : </strong>Volume is in range of 1-100. We align with decibel calculations * Hertz is the unit of pitch
@@ -69,8 +69,8 @@ const GeneralVariables = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card border-warning h-100">
-                            <h5 className="card-header border-warning bg-warning"><BsEmojiSmileFill className={`${styles.icon} me-1`} />Sentiment Analysis</h5>
+                        <div className="card border-dark h-100">
+                            <h5 className="card-header border-dark bg-dark text-white"><BsEmojiSmileFill className={`${styles.icon} me-1`} />Sentiment Analysis</h5>
                             <div className="card-body">
                                 <p align="justify" className='card-text'>
                                     <strong>Aggregate dominant Sentiment : </strong>Sentiment_score
@@ -84,8 +84,8 @@ const GeneralVariables = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card border-warning h-100">
-                            <h5 className="card-header border-warning bg-warning"><FaRibbon className={`${styles.icon} me-1`} />Gesture</h5>
+                        <div className="card border-dark h-100">
+                            <h5 className="card-header border-dark bg-dark text-white"><FaRibbon className={`${styles.icon} me-1`} />Gesture</h5>
                             <div className="card-body">
                                 <p align="justify" className='card-text'>
                                     <strong>Gesture Score : </strong>Estimated_Gesture_score
