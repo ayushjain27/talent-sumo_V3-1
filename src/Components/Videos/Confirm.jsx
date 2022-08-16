@@ -44,7 +44,7 @@ const Confirm = () => {
                             </div>
                             <div className='d-flex justify-content-between my-3'>
                                 <div onClick={handleDevice} style={{ cursor: "pointer", color: "#97a39b" }} className='fw-bold text-decoration-underline'>&#60; STEP 1: Let's check your device</div>
-                                <button onClick={handleNext} type="button" className="btn btn-success" style={{ backgroundColor: "#97a39b", border: "#97a39b" }}>Start Interview</button>
+                                <button onClick={handleNext} type="button" className="btn btn-success" style={{ backgroundColor: "#97a39b", border: "#97a39b" }}>Next</button>
                             </div>
                         </div>
                     </div>

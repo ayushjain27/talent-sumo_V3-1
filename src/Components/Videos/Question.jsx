@@ -49,7 +49,7 @@ const Question = () => {
 
     return () => clearInterval(intervalId);
   }, [isActive, counter]);
-  
+
   const {
     status,
     previewStream,
@@ -60,7 +60,6 @@ const Question = () => {
   } = useReactMediaRecorder({
     video: true,
   });
-  
 
   const navigate = useNavigate();
 
@@ -89,24 +88,25 @@ const Question = () => {
       <div className={`${styles.container} container my-5`}>
         <div className="row">
           <div className="col-md-4 bg-dark">
-             <div className='d-flex justify-content-center align-items-center flex-column'>
-                  {status !== "stopped" ? (
-                    <VideoPreview stream={previewStream} />
-                  ) : (
-                    <video className='w-100' src={mediaBlobUrl} height={300} controls />
-                  )}
-                <div className='d-flex justify-content-center fs-1 text-white'>
-                  <span className="minute">{minute}</span>
-                  <span>:</span>
-                  <span className="second">{second}</span>
-                </div>
-                  <button className='btn btn-light mt-3' onClick={() => window.location.reload()}>Retake</button>
-                  <div className='d-flex justify-content-center mx-auto gap-3 my-3'>
-                    <button onClick={handleStartRecording} className={`${isActive ? "btn-warning" : "btn-success"} btn `}>{isActive ? "Pause Recording" : "Start Recording"}</button>
-                    <button onClick={handleStopRecording} className="btn btn-danger">Stop Recording</button>
-                  </div>
-                </div>
+            <div className='d-flex justify-content-center align-items-center flex-column'>
+              {status !== "stopped" ? (
+                <VideoPreview stream={previewStream} />
+              ) : (
+                <video className='w-100' src={mediaBlobUrl} height={300} controls />
+              )}
+              <div className='d-flex justify-content-center fs-1 text-white'>
+                <span className="minute">{minute}</span>
+                <span>:</span>
+                <span className="second">{second}</span>
+              </div>
+              <h5 className='text-white text-center'>Press the Start to record your audio</h5>
+              <button className='btn btn-light mt-3' onClick={() => window.location.reload()}>Retake</button>
+              <div className='d-flex justify-content-center mx-auto gap-3 my-3'>
+                <button onClick={handleStartRecording} className={`${isActive ? "btn-warning" : "btn-success"} btn `}>{isActive ? "Pause Recording" : "Start Recording"}</button>
+                <button onClick={handleStopRecording} className="btn btn-danger">Stop Recording</button>
+              </div>
             </div>
+          </div>
           <div className="col-md-8 m-auto">
             <div className="container my-3">
               <h4>How you are doing ?</h4>
