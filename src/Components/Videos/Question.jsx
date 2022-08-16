@@ -59,6 +59,7 @@ const Question = () => {
     mediaBlobUrl
   } = useReactMediaRecorder({
     video: true,
+    echoCancellation: true
   });
 
   const navigate = useNavigate();
