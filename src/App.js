@@ -26,6 +26,9 @@ import Recording from './Components/Videos/Recording';
 import Start from './Components/Videos/Start';
 import Question from './Components/Videos/Question';
 import AudioRecording from './Components/Audios/AudioRecording';
+import Confirm from './Components/Videos/Confirm';
+import Trouble from './Components/Videos/Trouble';
+import Mcq from './Components/MCQ/Mcq';
 
 function App() {
 
@@ -63,9 +66,12 @@ function App() {
           <Route exact path='/welcome' element={<Welcome />} />
           <Route exact path='/work' element={<Work />} />
           <Route exact path='/recording' element={<Recording />} />
+          <Route exact path='/confirm' element={<Confirm />} />
+          <Route exact path='/trouble' element={<Trouble />} />
           <Route exact path='/start' element={<Start />} />
           <Route exact path='/question' element={<Question />} />
           <Route exact path='/audiorecording' element={<AudioRecording />} />
+          <Route exact path='/mcq' element={<Mcq />} />
         </Routes>
       </Router>
     </>

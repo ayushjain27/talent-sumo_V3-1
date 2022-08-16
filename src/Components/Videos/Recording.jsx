@@ -18,19 +18,22 @@ const VideoPreview = ({ stream }) => {
 };
 
 const Recording = () => {
+
   const navigate = useNavigate();
+
   const handleRecording = () => {
     navigate('/work')
   }
+
   const handleCompleted = () => {
-    navigate('/start')
+    navigate('/confirm')
   }
 
   return (
     <>
-      <div className={`${styles.container} container mt-5 mb-5`}>
+      <div className={`${styles.container} container my-5`}>
         <div className="row">
-          <div className="col-md-4 bg-dark">
+          <div className={`${styles.left} col-md-4`}>
             <ReactMediaRecorder
               video={{
                 aspectRatio: 0.75
@@ -46,20 +49,22 @@ const Recording = () => {
                     <button onClick={startRecording} className="btn btn-light">Check</button>
                   </div> */}
                   <div className='d-flex justify-content-center mx-auto gap-2 my-3'>
-                    <button onClick={startRecording} className="btn btn-outline-success">Start Recording</button>
-                    <button onClick={stopRecording} className="btn btn-outline-success">Stop Recording</button>
+                    <button onClick={startRecording} className="btn btn-outline-light">Start Recording</button>
+                    <button onClick={stopRecording} className="btn btn-outline-light">Stop Recording</button>
                   </div>
                 </div>
               )}
             />
           </div>
-          <div className="col-md-8 my-3 m-auto">
-            <div className="container">
+          <div className="col-md-8 m-auto">
+            <div className="container my-3">
               <h3 className='text-center mb-3'>STEP 1: Let's check your device</h3>
-              <p className="">On your device, please grant access to your camera and microphone. Run a test recording to ensure you can see and hear yourself clearly.</p>
-              <p className=''>Don't worry, this is just a test recording, and won't be shared with anyone else.</p>
-              <div onClick={handleRecording} style={{ cursor: "pointer" }} className='mt-3 mb-3 fw-bold text-decoration-underline'>&#60; How it Works</div>
-              <button onClick={handleCompleted} className="btn btn-dark float-end">Next</button>
+              <p align="justify">On your device, please grant access to your camera and microphone. <span className='text-dark fw-bold'>Run a test recording</span> to ensure you can see and hear yourself clearly.</p>
+              <p align="justify" className='text-danger'>Don't worry, this is just a test recording, and won't be shared with anyone else.</p>
+              <div className='d-flex justify-content-between my-3'>
+                <div onClick={handleRecording} style={{ cursor: "pointer", color: "#97a39b" }} className='fw-bold text-decoration-underline'>&#60; How it Works?</div>
+                <button onClick={handleCompleted} className="btn btn-dark" style={{ backgroundColor: "#97a39b", border: "#97a39b" }}>Next</button>
+              </div>
             </div>
           </div>
         </div>

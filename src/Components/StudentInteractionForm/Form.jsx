@@ -79,10 +79,10 @@ const Form = () => {
 
       <div className="container">
         <div className="d-grid col-md-8 mx-auto my-5">
-          <div className="card h-100 border-warning">
+          <div className="card h-100 border-dark">
             <div
-              className="card-header bg-warning d-flex justify-content-between align-items-center"
-              style={{ borderBottom: "2px solid #ffc107" }}
+              className="card-header bg-dark text-white"
+              style={{ borderBottom: "2px solid #000" }}
             >
               <h3>Interaction Title</h3>
             </div>
@@ -135,14 +135,14 @@ const Form = () => {
                 </div>
                 <button
                   onClick={handleDisplay}
-                  className="btn btn-warning mb-2"
+                  className="btn btn-dark button mb-2"
                 >
                   Validate
                 </button>
-                <hr style={{ color: "#ffc107", borderTop: "2px solid", opacity: "1" }} />
+                <hr style={{ color: "#000", borderTop: "2px solid", opacity: "1" }} />
                 <div className={`${display ? "" : "d-none"}`}>
                   <ul className="list-group">
-                    <li className="list-group-item bg-warning fw-bold" aria-current="true">Instructions:</li>
+                    <h5 className="list-group-item bg-dark text-white fw-bold" aria-current="true">Instructions :</h5>
                     <li className="list-group-item">Please make sure you are in the center of the camera.</li>
                     <li className="list-group-item">Make sure you have good lighting.</li>
                     <li className="list-group-item">Use Professional dress when recording.</li>
