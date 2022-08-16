@@ -29,6 +29,7 @@ import AudioRecording from './Components/Audios/AudioRecording';
 import Confirm from './Components/Videos/Confirm';
 import Trouble from './Components/Videos/Trouble';
 import Mcq from './Components/MCQ/Mcq';
+import Responses from './Components/Responses/Responses';
 
 function App() {
 
@@ -72,6 +73,7 @@ function App() {
           <Route exact path='/question' element={<Question />} />
           <Route exact path='/audiorecording' element={<AudioRecording />} />
           <Route exact path='/mcq' element={<Mcq />} />
+          <Route exact path='/response' element={<Responses />} />
         </Routes>
       </Router>
     </>

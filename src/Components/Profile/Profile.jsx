@@ -127,7 +127,7 @@ const Profile = () => {
                   <div className="col-md-6">
                     <div className="mb-3">
                       <select
-                        class="form-select"
+                        className="form-select"
                         aria-label="Default select example"
                       >
                         <option selected>Select Country</option>
