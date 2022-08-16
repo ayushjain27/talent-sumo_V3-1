@@ -45,9 +45,6 @@ const Recording = () => {
                   ) : (
                     <video className='w-100' src={mediaBlobUrl} autoplay loop height={300} controls />
                   )}
-                  {/* <div className='d-grid my-3'>
-                    <button onClick={startRecording} className="btn btn-light">Check</button>
-                  </div> */}
                   <div className='d-flex justify-content-center mx-auto gap-2 my-3'>
                     <button onClick={startRecording} className="btn btn-outline-light">Start Recording</button>
                     <button onClick={stopRecording} className="btn btn-outline-light">Stop Recording</button>
