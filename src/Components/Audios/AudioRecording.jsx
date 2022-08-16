@@ -6,13 +6,6 @@ import { useReactMediaRecorder } from "react-media-recorder";
 const AudioRecording = () => {
   const navigate = useNavigate();
 
-  const handleRecording = () => {
-    navigate('/recording')
-  }
-  const handleCompleted = () => {
-    navigate('/start')
-  }
-
   const handleClickStart = () => {
     if (!isActive) {
       startRecording();

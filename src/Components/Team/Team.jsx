@@ -110,7 +110,7 @@ const Team = () => {
                                         type="radio"
                                         name="flexRadioDefault"
                                         id="no"
-                                        checked
+                                        defaultChecked
                                     />
                                     <label className="form-check-label" htmlFor="no">
                                         No
@@ -140,7 +140,7 @@ const Team = () => {
                                         type="radio"
                                         name="flexRadioDefault1"
                                         id="no1"
-                                        checked
+                                        defaultChecked
                                     />
                                     <label className="form-check-label" htmlFor="no1">
                                         No
@@ -170,7 +170,7 @@ const Team = () => {
                                         type="radio"
                                         name="flexRadioDefault2"
                                         id="no2"
-                                        checked
+                                        defaultChecked
                                     />
                                     <label className="form-check-label" htmlFor="no2">
                                         No
