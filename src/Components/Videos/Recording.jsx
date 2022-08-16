@@ -43,7 +43,7 @@ const Recording = () => {
                   {status !== "stopped" ? (
                     <VideoPreview stream={previewStream} />
                   ) : (
-                    <video className='w-100' src={mediaBlobUrl} autoplay loop height={300} controls />
+                    <video className='w-100' src={mediaBlobUrl} autoPlay loop height={300} controls />
                   )}
                   <div className='d-flex justify-content-center mx-auto gap-2 my-3'>
                     <button onClick={startRecording} className="btn btn-outline-light">Start Recording</button>
