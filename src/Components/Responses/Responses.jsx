@@ -18,9 +18,9 @@ const Responses = () => {
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label htmlFor="testId" className="col-sm-2 col-form-label fw-bold">Test ID :</label>
+                                <label htmlFor="candidateName" className="col-sm-2 col-form-label fw-bold">Candidate Name :</label>
                                 <div className="col-sm-10">
-                                    <input type="number" className="form-control" id="testId" />
+                                    <input type="number" className="form-control" id="candidateName" />
                                 </div>
                             </div>
                             <div className="row mb-3">
@@ -34,28 +34,28 @@ const Responses = () => {
                 </div>
             </div>
             <div className={`${styles.container} container p-3 my-5`}>
-                <h5>Video Response :</h5>
+                <h5>Question-1 :</h5>
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
-                        <h5 className='card-title'>Question ?</h5>
+                        <h5 className='card-title'>Response Video</h5>
                         <button className='btn btn-secondary'>Play</button>
                     </div>
                 </div>
             </div>
             <div className={`${styles.container} container p-3 my-5`}>
-                <h5>Audio Response :</h5>
+                <h5>Question-1 :</h5>
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
-                        <h5 className='card-title'>Question ?</h5>
+                        <h5 className='card-title'>Response Audio</h5>
                         <button className='btn btn-secondary'>Play</button>
                     </div>
                 </div>
             </div>
             <div className={`${styles.container} container p-3 my-5`}>
-                <h5>MCQ Response :</h5>
+                <h5>Question-1 :</h5>
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
-                        <h5 className='card-title'>Question ?</h5>
+                        <h5 className='card-title'>Response MCQ</h5>
                         <hr />
                         <div className="form-check">
                             <input className="form-check-input" type="radio" name="flexRadioDefault" id="option1" />
@@ -70,7 +70,7 @@ const Responses = () => {
                             </label>
                         </div>
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="option3" checked />
+                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="option3" defaultChecked />
                             <label className="form-check-label" htmlFor="option3">
                                 Option 3
                             </label>

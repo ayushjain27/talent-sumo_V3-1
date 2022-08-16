@@ -61,7 +61,7 @@ const Create = () => {
                                     </div>
                                     <div className="col-md-4">
                                         <div className="mb-3">
-                                            <label htmlFor="positionCode" className="form-label fw-bold">Test Code</label>
+                                            <label htmlFor="positionCode" className="form-label fw-bold">Test ID</label>
                                             <input type="number" className="form-control" placeholder='Enter 6-digit code' id="positionCode" />
                                         </div>
                                     </div>

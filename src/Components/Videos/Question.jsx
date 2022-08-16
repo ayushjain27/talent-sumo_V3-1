@@ -18,37 +18,37 @@ const VideoPreview = ({ stream }) => {
 };
 
 const Question = () => {
-  const [second, setSecond] = useState("00");
-  const [minute, setMinute] = useState("00");
+  // const [second, setSecond] = useState("00");
+  // const [minute, setMinute] = useState("00");
   const [isActive, setIsActive] = useState(false);
-  const [counter, setCounter] = useState(0);
+  // const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-    let intervalId;
+  // useEffect(() => {
+  //   let intervalId;
 
-    if (isActive) {
-      intervalId = setInterval(() => {
-        const secondCounter = counter % 60;
-        const minuteCounter = Math.floor(counter / 60);
+  //   if (isActive) {
+  //     intervalId = setInterval(() => {
+  //       const secondCounter = counter % 60;
+  //       const minuteCounter = Math.floor(counter / 60);
 
-        let computedSecond =
-          String(secondCounter).length === 1
-            ? `0${secondCounter}`
-            : secondCounter;
-        let computedMinute =
-          String(minuteCounter).length === 1
-            ? `0${minuteCounter}`
-            : minuteCounter;
+  //       let computedSecond =
+  //         String(secondCounter).length === 1
+  //           ? `0${secondCounter}`
+  //           : secondCounter;
+  //       let computedMinute =
+  //         String(minuteCounter).length === 1
+  //           ? `0${minuteCounter}`
+  //           : minuteCounter;
 
-        setSecond(computedSecond);
-        setMinute(computedMinute);
+  //       setSecond(computedSecond);
+  //       setMinute(computedMinute);
 
-        setCounter((counter) => counter + 1);
-      }, 650);
-    }
+  //       setCounter((counter) => counter + 1);
+  //     }, 650);
+  //   }
 
-    return () => clearInterval(intervalId);
-  }, [isActive, counter]);
+  //   return () => clearInterval(intervalId);
+  // }, [isActive, counter]);
 
   const {
     status,
@@ -59,6 +59,7 @@ const Question = () => {
     mediaBlobUrl
   } = useReactMediaRecorder({
     video: true,
+    audio: true,
     echoCancellation: true
   });
 
@@ -76,12 +77,16 @@ const Question = () => {
     }
 
     setIsActive(!isActive);
+
+    document.getElementById("instruction").innerHTML = isActive ? "Paused" : "Started";
   }
 
   const handleStopRecording = () => {
     pauseRecording();
     stopRecording();
-    setIsActive(!isActive);
+    setIsActive(isActive);
+    document.getElementById("instruction").innerHTML = "Stopped";
+
   }
 
   return (
@@ -90,17 +95,17 @@ const Question = () => {
         <div className="row">
           <div className="col-md-4 bg-dark">
             <div className='d-flex justify-content-center align-items-center flex-column'>
+              <h5 className='card-header bg-white text-center w-100 my-3 p-2' id='instruction'>Idle</h5>
               {status !== "stopped" ? (
                 <VideoPreview stream={previewStream} />
               ) : (
                 <video className='w-100' src={mediaBlobUrl} height={300} controls />
               )}
-              <div className='d-flex justify-content-center fs-1 text-white'>
+              {/* <div className='d-flex justify-content-center fs-1 text-white'>
                 <span className="minute">{minute}</span>
                 <span>:</span>
                 <span className="second">{second}</span>
-              </div>
-              <h5 className='text-white text-center'>Press the Start to record your audio</h5>
+              </div> */}
               <button className='btn btn-light mt-3' onClick={() => window.location.reload()}>Retake</button>
               <div className='d-flex justify-content-center mx-auto gap-3 my-3'>
                 <button onClick={handleStartRecording} className={`${isActive ? "btn-warning" : "btn-success"} btn `}>{isActive ? "Pause Recording" : "Start Recording"}</button>

@@ -82,7 +82,6 @@ const Dashboard = () => {
                     <button onClick={() => navigate('/interaction')} className='btn btn-dark'>View Interaction</button>
                     <button onClick={() => navigate('/viewReport')} className='btn btn-dark'>View Candidate Reports</button>
                     <button onClick={() => navigate('/teams')} className='btn btn-dark'>Teams</button>
-                    <button onClick={() => navigate('/response')} className='btn btn-dark'>Student Response</button>
                 </div>
 
             </div>
