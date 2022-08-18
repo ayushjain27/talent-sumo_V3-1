@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Responses.module.css';
+import VideoModal from '../ModalSection/VideoModal.jsx';
+import AudioModal from '../ModalSection/AudioModal.jsx';
 
 const Responses = () => {
     return (
@@ -38,7 +40,7 @@ const Responses = () => {
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
                         <h5 className='card-title'>Response Video</h5>
-                        <button className='btn btn-secondary'>Play</button>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" className='btn btn-secondary'>Play</button>
                     </div>
                 </div>
             </div>
@@ -47,7 +49,7 @@ const Responses = () => {
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
                         <h5 className='card-title'>Response Audio</h5>
-                        <button className='btn btn-secondary'>Play</button>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal1" className='btn btn-secondary'>Play</button>
                     </div>
                 </div>
             </div>
@@ -88,6 +90,8 @@ const Responses = () => {
                     </div>
                 </div>
             </div>
+            <VideoModal />
+            <AudioModal />
         </>
     )
 }
