@@ -89,6 +89,8 @@ const Create = () => {
                                                 <option value="Audio">Audio</option>
                                                 <option value="Video">Video</option>
                                                 <option value="Mcq">Mcq</option>
+                                                <option value="Upload">Upload</option>
+                                                <option value="Type">Type</option>
                                             </select>
                                         </div>
                                     </div>

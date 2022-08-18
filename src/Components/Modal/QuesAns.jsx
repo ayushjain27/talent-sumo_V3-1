@@ -121,43 +121,51 @@ const Quesans = () => {
                               <option>Audio</option>
                               <option>Video</option>
                               <option>MCQ</option>
+                              <option>Upload</option>
+                              <option>Type</option>
                               <option>Resume Link</option>
                             </select>
                           </td>
                           <td style={display}>
                             <textarea
                               className="form-control"
-                              id="idealAnswer"
+                              id="option1"
                               rows="1"
                             ></textarea>
                           </td>
                           <td style={display}>
                             <textarea
                               className="form-control"
-                              id="idealAnswer"
+                              id="option2"
                               rows="1"
                             ></textarea>
                           </td>
                           <td style={display}>
                             <textarea
                               className="form-control"
-                              id="idealAnswer"
+                              id="option3"
                               rows="1"
                             ></textarea>
                           </td>
                           <td style={display}>
                             <textarea
                               className="form-control"
-                              id="idealAnswer"
+                              id="option4"
                               rows="1"
                             ></textarea>
                           </td>
                           <td style={display}>
-                            <textarea
-                              className="form-control"
-                              id="idealAnswer"
-                              rows="1"
-                            ></textarea>
+                            <select
+                              onChange={handleOnChange}
+                              className="form-select"
+                              id="rightAnswer"
+                            >
+                              <option selected>Select...</option>
+                              <option value="Option 1">Option 1</option>
+                              <option value="Option 2">Option 2</option>
+                              <option value="Option 3">Option 3</option>
+                              <option value="Option 4">Option 4</option>
+                            </select>
                           </td>
                           <td>
                             <textarea

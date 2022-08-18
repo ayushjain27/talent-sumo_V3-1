@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './Mcq.module.css';
+import { useNavigate } from 'react-router-dom';
 
 import mcq from '../../assets/Images/mcq.png'
 
 const Mcq = () => {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <div className={`${styles.container} container my-5`}>
@@ -40,12 +44,10 @@ const Mcq = () => {
                                 </label>
                             </div>
                             <hr />
-                            <button className="btn btn-dark float-end mb-3">Save and Next</button>
+                            <button onClick={() => navigate("/imageUpload")} className="btn btn-dark float-end mb-3">Save and Next</button>
                         </div>
                     </div>
                 </div>
-            </div >
-            <div>
             </div>
         </>
     )

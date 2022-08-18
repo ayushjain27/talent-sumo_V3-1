@@ -84,7 +84,7 @@ const AudioRecording = () => {
           <div className="col-md-4 bg-dark">
             <div className="d-flex flex-column">
               <div className='d-flex justify-content-center'>
-                <video src={mediaBlobUrl} controls loop />
+                <video src={mediaBlobUrl} controls />
               </div>
               <div className='d-flex justify-content-center fs-1 text-white'>
                 <span className="minute">{minute}</span>
