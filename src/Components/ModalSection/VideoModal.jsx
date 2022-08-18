@@ -13,6 +13,7 @@ const VideoModal = () => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
+              <h5>Response Video</h5>
               <button
                 type="button"
                 className="btn-close"
@@ -32,12 +33,12 @@ const VideoModal = () => {
             <div className="modal-footer">
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="btn btn-outline-secondary"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
-              <button type="button" className="btn btn-primary">
+              <button type="button" className="btn btn-dark">
                 Save changes
               </button>
             </div>
