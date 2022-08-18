@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Logo.module.css";
 import { Link } from "react-router-dom";
+import VideoModal from "./Modal/VideoModal";
 
 const Logo = () => {
 
@@ -17,10 +18,11 @@ const Logo = () => {
           <hr />
           <h4>CANDIDATE NAME : <span className="text-secondary">Abc</span></h4>
           <Link to="/response">
-            <h4 className="text-primary text-decoration-underline" style={{ cursor: "pointer" }}>CANDIDATE RESPONSE</h4>
+            <h4 data-bs-toggle="modal" data-bs-target="#exampleModal" className="text-primary text-decoration-underline" style={{ cursor: "pointer" }}>CANDIDATE RESPONSE</h4>
           </Link>
         </div>
       </div>
+      <VideoModal />
     </>
   );
 };
