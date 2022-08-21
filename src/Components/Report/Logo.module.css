@@ -1,6 +1,5 @@
-.heading {
-  border-bottom: 2px solid #000;
-  width: max-content;
+.row {
+  background-color: #97a39b;
 }
 
 @media (max-width: 770px) {
@@ -8,7 +7,7 @@
     width: auto;
   }
 
-  .header {
-    display: grid !important;
+  .row {
+    flex-direction: column-reverse;
   }
 }

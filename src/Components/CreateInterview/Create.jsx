@@ -154,6 +154,10 @@ const Create = () => {
                                     </div>
                                 </div>
                                 <div className="d-flex justify-content-between mb-3">
+                                    <label htmlFor="question" className="form-label fw-bold">Skills: <span className='badge badge bg-secondary'>skill name</span></label>
+                                    <button type="button" className="btn btn-outline-secondary button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
+                                </div>
+                                <div className="d-flex justify-content-between mb-3">
                                     <label htmlFor="question" className="form-label fw-bold">Total Question: <span className='badge badge bg-secondary'>No.</span></label>
                                     <button type="button" className="btn btn-outline-secondary button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
                                 </div>

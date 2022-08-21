@@ -14,29 +14,28 @@ import Footer from "./Footer";
 const Report = () => {
   return (
     <>
-      <div className="container my-5">
-        <div className="card border-dark">
-          <div className="card-body">
-            <Logo />
-            <hr />
-            <Introduction />
-            <hr />
+      <div className="container my-5" style={{ backgroundColor: "#f4e9e2" }}>
+        <Logo />
+        <Introduction />
+        <div className="row my-5">
+          <div className="col-md-6 m-auto">
             <DomainRatings />
-            <hr />
+          </div>
+          <div className="col-md-6 m-auto">
             <FeedbackSnapsot />
-            <hr />
-            <InteractionScorecard />
-            <hr />
-            <RatingVariables />
-            <hr />
-            <GeneralVariables />
-            <hr />
-            <ContentRatings />
-            <hr />
-            <InteractionTranscript />
-            <Footer />
           </div>
         </div>
+        <hr />
+        <InteractionScorecard />
+        <hr />
+        <RatingVariables />
+        <hr />
+        <GeneralVariables />
+        <hr />
+        <ContentRatings />
+        <hr />
+        <InteractionTranscript />
+        <Footer />
       </div>
     </>
   );

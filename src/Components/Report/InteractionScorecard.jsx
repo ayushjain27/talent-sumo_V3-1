@@ -4,9 +4,11 @@ import styles from './InteractionScorecard.module.css';
 const InteractionScorecard = () => {
     return (
         <>
-            <h3 className='text-center mb-4'>INTERACTION SCORECARD</h3>
-            <table className={`${styles.table} table table-bordered text-center`}>
-                <thead className='table-secondary'>
+            {/* <div className="card border-0" style={{ color: "#0b3c47" }}>
+                <div className="card-body"> */}
+            <h3 className='text-center mb-3' style={{ color: "#0b3c47" }}>INTERACTION SCORECARD</h3>
+            <table className={`${styles.table} table table-bordered text-center mb-5`} style={{ borderColor: "#c4933b" }}>
+                <thead style={{ backgroundColor: "#c4933b" }}>
                     <tr>
                         <th scope="col">Likeability</th>
                         <th scope="col">Charm</th>
@@ -43,6 +45,8 @@ const InteractionScorecard = () => {
                     </tr>
                 </tbody>
             </table>
+            {/* </div>
+            </div> */}
         </>
     )
 }
