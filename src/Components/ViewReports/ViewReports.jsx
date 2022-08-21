@@ -22,7 +22,7 @@ const ViewReports = () => {
                                     <label htmlFor="testId" className="col-sm-2 col-form-label fw-bold">Test ID :</label>
                                     <div className="col-sm-10">
                                         <select className="form-select" id="testId" aria-label="Default select example">
-                                            <option selected value="Select">Select...</option>
+                                            <option value="Select...">Select...</option>
                                         </select>
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@ const ViewReports = () => {
                             </thead>
                             <thead>
                                 <tr>
-                                    <th scope='col'>Canddiate ID</th>
+                                    <th scope='col'>Candidate ID</th>
                                     <th scope='col'>Name</th>
                                     <th scope='col'>Interaction ID / Response</th>
                                     <th scope='col'>Individual Report</th>

@@ -59,7 +59,7 @@ const Access = () => {
                                         <div className="mb-3">
                                             <label htmlFor="whoInitiate" className="form-label fw-bold">Who can Initiate ?</label>
                                             <select className="form-select" id='whoInitiate'>
-                                                <option selected value="Select">Select...</option>
+                                                <option value="Select">Select...</option>
                                                 <option value="Bot">Bot</option>
                                                 <option value="User">User</option>
                                             </select>
@@ -69,7 +69,7 @@ const Access = () => {
                                         <div className="mb-3">
                                             <label htmlFor="whoInitiate" className="form-label fw-bold">Timer</label>
                                             <select className="form-select" id='whoInitiate' aria-label="Default select example">
-                                                <option selected value="Select">Select...</option>
+                                                <option value="Select">Select...</option>
                                                 <option value="15 minutes">15 minutes</option>
                                                 <option value="20 minutes">20 minutes</option>
                                                 <option value="30 minutes">30 minutes</option>

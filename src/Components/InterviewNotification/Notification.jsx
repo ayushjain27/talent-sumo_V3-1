@@ -41,7 +41,7 @@ const Notification = () => {
                                     <div className="mb-3">
                                         <label className="form-label fw-bold" htmlFor="report">Report sent to User</label>
                                         <select className="form-select" id='report' aria-label="Default select example">
-                                            <option selected value="Select">Select...</option>
+                                            <option value="Select">Select...</option>
                                             <option value="Yes">Yes</option>
                                             <option value="No">No</option>
                                         </select>

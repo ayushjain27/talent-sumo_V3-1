@@ -71,7 +71,7 @@ const Create = () => {
                                         <div className="mb-3">
                                             <label htmlFor="track" className="form-label fw-bold">Track/Domain :</label>
                                             <select className="form-select" id='track' aria-label="Default select example">
-                                                <option selected value="Select">Select...</option>
+                                                <option value="Select">Select...</option>
                                                 <option value="Custom-A">Custom-A</option>
                                                 <option value="Custom-B">Custom-B</option>
                                                 <option value="Sales">Sales</option>
@@ -85,7 +85,7 @@ const Create = () => {
                                         <div className="mb-3">
                                             <label htmlFor="mode" className="form-label fw-bold">Interaction Mode</label>
                                             <select className="form-select" id='mode' aria-label="Default select example">
-                                                <option selected value="Select">Select...</option>
+                                                <option value="Select">Select...</option>
                                                 <option value="Audio">Audio</option>
                                                 <option value="Video">Video</option>
                                                 <option value="Mcq">Mcq</option>

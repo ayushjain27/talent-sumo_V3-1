@@ -99,9 +99,9 @@ const Quesans = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {[...Array(noOfRows)].map(() => {
+                    {[...Array(noOfRows)].map((index) => {
                       return (
-                        <tr>
+                        <tr key="index">
                           <td>
                             <textarea
                               className="form-control"
@@ -117,7 +117,7 @@ const Quesans = () => {
                               id="answer"
                               aria-label="Default select example"
                             >
-                              <option selected>Select...</option>
+                              <option>Select...</option>
                               <option>Audio</option>
                               <option>Video</option>
                               <option>MCQ</option>
@@ -160,7 +160,7 @@ const Quesans = () => {
                               className="form-select"
                               id="rightAnswer"
                             >
-                              <option selected>Select...</option>
+                              <option value="Select...">Select...</option>
                               <option value="Option 1">Option 1</option>
                               <option value="Option 2">Option 2</option>
                               <option value="Option 3">Option 3</option>
@@ -192,7 +192,7 @@ const Quesans = () => {
                               className="form-select"
                               id="contentRated"
                             >
-                              <option selected value="Yes">
+                              <option selected value="Select...">
                                 Select...
                               </option>
                               <option value="Yes">Yes</option>

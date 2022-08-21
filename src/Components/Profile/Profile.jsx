@@ -130,7 +130,7 @@ const Profile = () => {
                         className="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Country</option>
+                        <option value="Select Country">Select Country</option>
                         {countries.map((item) => (
                           <option>{item.name}</option>
                         ))}

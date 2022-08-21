@@ -84,7 +84,7 @@ const Responses = () => {
                             </label>
                         </div>
                         <hr />
-                        <div class="alert alert-success" role="alert">
+                        <div className="alert alert-success" role="alert">
                             <strong>Correct Answer :</strong> Option 1
                         </div>
                     </div>

@@ -95,7 +95,7 @@ const Details = () => {
                             <div className="mb-3">
                               <label htmlFor="track" className="form-label fw-bold">Track/Domain :</label>
                               <select disabled={disableButton} className="form-select" id='track' aria-label="Default select example">
-                                <option selected value="Select">Select...</option>
+                                <option value="Select">Select...</option>
                                 <option value="Custom-A">Custom-A</option>
                                 <option value="Custom-B">Custom-B</option>
                                 <option value="Sales">Sales</option>
@@ -109,7 +109,7 @@ const Details = () => {
                             <div className="mb-3">
                               <label htmlFor="mode" className="form-label fw-bold">Interaction Mode</label>
                               <select disabled={disableButton} className="form-select" id='mode' aria-label="Default select example">
-                                <option selected value="Select">Select...</option>
+                                <option value="Select">Select...</option>
                                 <option value="Audio">Audio</option>
                                 <option value="Video">Video</option>
                                 <option value="Mcq">Mcq</option>
@@ -246,7 +246,7 @@ const Details = () => {
                             <div className="mb-3">
                               <label htmlFor="whoInitiate" className="form-label fw-bold">Who can Initiate ?</label>
                               <select className="form-select" id='whoInitiate'>
-                                <option selected value="Select">Select...</option>
+                                <option value="Select">Select...</option>
                                 <option value="Bot">Bot</option>
                                 <option value="User">User</option>
                               </select>
@@ -256,7 +256,7 @@ const Details = () => {
                             <div className="mb-3">
                               <label htmlFor="whoInitiate" className="form-label fw-bold">Timer</label>
                               <select className="form-select" id='whoInitiate' aria-label="Default select example">
-                                <option selected value="Select">Select...</option>
+                                <option value="Select">Select...</option>
                                 <option value="15 minutes">15 minutes</option>
                                 <option value="20 minutes">20 minutes</option>
                                 <option value="30 minutes">30 minutes</option>
@@ -440,7 +440,7 @@ const Details = () => {
                           <div className="mb-3">
                             <label className="form-label fw-bold" htmlFor="report">Report sent to User</label>
                             <select className="form-select" id='report' aria-label="Default select example">
-                              <option selected value="Select">Select...</option>
+                              <option value="Select">Select...</option>
                               <option value="Yes">Yes</option>
                               <option value="No">No</option>
                             </select>
