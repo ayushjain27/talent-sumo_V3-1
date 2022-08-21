@@ -181,7 +181,7 @@ const Access = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
+                                    {/* <div className="col-md-4">
                                         <div className='mb-3'>
                                             <label htmlFor="voiceMatch" className="form-label fw-bold">Voice Match</label>
                                             <div className="form-check">
@@ -197,7 +197,7 @@ const Access = () => {
                                                 </label>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <hr />
                                     <div className="d-flex justify-content-end me-auto gap-3">
                                         <button onClick={handleBack} type="submit" className="btn btn-outline-secondary button">Back</button>

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 
 const Value = () => {
-    const [noOfRows, setNoOfRows] = useState(1);
+  const [noOfRows, setNoOfRows] = useState(1);
+
+  const style = {
+    height: "150px",
+    width: "100%",
+    overflow: "auto",
+  };
 
   return (
     <>
-        <div
-        className="modal fade modal-xl"
+      <div
+        className="modal fade"
         id="exampleModal1"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
@@ -16,7 +22,7 @@ const Value = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
-                Skills: 
+                Skills:
                 <span className="badge badge bg-secondary mx-2">Skill Name.</span>
               </h5>
               <button
@@ -27,13 +33,13 @@ const Value = () => {
               ></button>
             </div>
             <div className="modal-body">
-              <div>
-                    {[...Array(noOfRows)].map(() => {
-                      return (
-                        <input type="text" className="form-control mb-3" placeholder='Enter text' />
-                      );
-                    })}
-              <hr />
+              <div style={style}>
+                {[...Array(noOfRows)].map(() => {
+                  return (
+                    <input type="text" className="form-control mb-3" placeholder='Add your skills' />
+                  );
+                })}
+                <hr />
               </div>
               <div>
                 <button

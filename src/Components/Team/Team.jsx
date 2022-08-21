@@ -34,9 +34,10 @@ const Team = () => {
                     <div className="d-grid col-md-5 ms-auto">
                         <div className="card border-0 mt-3">
                             <div className="card-body" style={style}>
-                                {[...Array(noOfRows)].map(() => {
+                                {[...Array(noOfRows)].map((index) => {
                                     return (
                                         <input
+                                            key={index}
                                             type="email"
                                             className="form-control mb-2"
                                             id="email"

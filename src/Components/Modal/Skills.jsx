@@ -18,7 +18,7 @@ const Track = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
-                Track
+                Add Skills
               </h5>
               <button
                 type="button"

@@ -101,7 +101,7 @@ const Quesans = () => {
                   <tbody>
                     {[...Array(noOfRows)].map((index) => {
                       return (
-                        <tr key="index">
+                        <tr key={index}>
                           <td>
                             <textarea
                               className="form-control"
@@ -121,8 +121,8 @@ const Quesans = () => {
                               <option>Audio</option>
                               <option>Video</option>
                               <option>MCQ</option>
-                              <option>Upload</option>
-                              <option>Type</option>
+                              <option>Image</option>
+                              <option>Text</option>
                               <option>Resume Link</option>
                             </select>
                           </td>

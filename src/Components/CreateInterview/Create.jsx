@@ -4,7 +4,7 @@ import styles from './Create.module.css';
 import { useNavigate } from 'react-router-dom';
 
 import Quesans from '../Modal/QuesAns';
-import Value from '../Modal/Value'
+import Skills from '../Modal/Skills';
 
 const Create = () => {
 
@@ -71,9 +71,9 @@ const Create = () => {
                                         <div className="mb-3">
                                             <label htmlFor="track" className="form-label fw-bold">Track/Domain :</label>
                                             <select className="form-select" id='track' aria-label="Default select example">
-                                                <option value="Select">Select...</option>
-                                                <option value="Custom-A">Custom-A</option>
-                                                <option value="Custom-B">Custom-B</option>
+                                                <option value="Select...">Select...</option>
+                                                {/* <option value="Custom-A">Custom-A</option>
+                                                <option value="Custom-B">Custom-B</option> */}
                                                 <option value="Sales">Sales</option>
                                                 <option value="Service">Service</option>
                                                 <option value="HR">HR</option>
@@ -88,15 +88,15 @@ const Create = () => {
                                                 <option value="Select">Select...</option>
                                                 <option value="Audio">Audio</option>
                                                 <option value="Video">Video</option>
-                                                <option value="Mcq">Mcq</option>
-                                                <option value="Upload">Upload</option>
-                                                <option value="Type">Type</option>
+                                                <option value="MCQ">MCQ</option>
+                                                <option value="Image">Image</option>
+                                                <option value="Text">Text</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-md-6">
+                                    {/* <div className="col-md-6">
                                         <div className='mb-3'>
                                             <label className="form-label fw-bold">Report Type</label>
                                             <div className="form-check">
@@ -116,10 +116,11 @@ const Create = () => {
                                                 }
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className='mb-3'>
-                                            <label className="form-label fw-bold">Generate Certificate</label>
+                                    </div> */}
+                                    {/* <div className="col-md-6"> */}
+                                    <div className='mb-3'>
+                                        <label className="form-label fw-bold">Generate Certificate</label>
+                                        <div className='d-flex gap-3'>
                                             <div className="form-check">
                                                 <input disabled={certificate ? false : true} onClick={handleCertificate} className="form-check-input" type="radio" name="generateCertificate" id="no" defaultChecked />
                                                 <label className="form-check-label" htmlFor="no">
@@ -138,6 +139,7 @@ const Create = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    {/* </div> */}
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">
@@ -153,13 +155,19 @@ const Create = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="d-flex justify-content-between mb-3">
-                                    <label htmlFor="question" className="form-label fw-bold">Skills: <span className='badge badge bg-secondary'>skill name</span></label>
-                                    <button type="button" className="btn btn-outline-secondary button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Add</button>
-                                </div>
-                                <div className="d-flex justify-content-between mb-3">
-                                    <label htmlFor="question" className="form-label fw-bold">Total Question: <span className='badge badge bg-secondary'>No.</span></label>
-                                    <button type="button" className="btn btn-outline-secondary button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
+                                <div className="row">
+                                    <div className="col-md-6 m-auto">
+                                        <div className="d-flex justify-content-between mb-3">
+                                            <label htmlFor="question" className="form-label fw-bold">Skills: <span className='badge badge bg-secondary'>skill name</span></label>
+                                            <button type="button" className="btn btn-outline-secondary button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Add</button>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6 m-auto">
+                                        <div className="d-flex justify-content-between mb-3">
+                                            <label htmlFor="question" className="form-label fw-bold">Total Question: <span className='badge badge bg-secondary'>No.</span></label>
+                                            <button type="button" className="btn btn-outline-secondary button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                             <hr />
@@ -171,7 +179,7 @@ const Create = () => {
                 </div>
             </div>
             <Quesans />
-            <Value />
+            <Skills />
         </>
     )
 }
