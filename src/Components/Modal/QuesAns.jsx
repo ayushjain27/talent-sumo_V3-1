@@ -156,7 +156,6 @@ const Quesans = () => {
                           </td>
                           <td style={display}>
                             <select
-                              onChange={handleOnChange}
                               className="form-select"
                               id="rightAnswer"
                             >
