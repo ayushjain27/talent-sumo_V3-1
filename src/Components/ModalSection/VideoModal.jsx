@@ -26,7 +26,7 @@ const VideoModal = () => {
                 <iframe
                   src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
                   title="YouTube video"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>

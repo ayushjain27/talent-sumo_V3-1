@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FeedbackSnapsot = () => {
+const FeedbackSnapshot = () => {
     return (
         <>
             <div className='container'>
@@ -23,4 +23,4 @@ const FeedbackSnapsot = () => {
     )
 }
 
-export default FeedbackSnapsot;
+export default FeedbackSnapshot;

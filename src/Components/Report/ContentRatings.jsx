@@ -1,19 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import ReactApexChart from 'react-apexcharts';
 
 const ContentRatings = () => {
+
+    const [state, setState] = useState({
+        series: [{
+            name: "rating",
+            data: [40, 70, 50, 60, 90, 30]
+        }],
+        options: {
+            chart: {
+                type: 'bar',
+                height: "100%",
+                width: "100%",
+                toolbar: {
+                    show: false,
+                },
+            },
+            xaxis: {
+                type: 'category',
+                categories: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
+                title: {
+                    text: 'Number of Questions',
+                    style: {
+                        fontSize: '14px',
+                    }
+                },
+            },
+            yaxis: {
+                show: true,
+                labels: {
+                    show: true,
+                    formatter: (value) => {
+                        return value + '%';
+                    }
+                },
+                title: {
+                    text: 'Rating in %',
+                    style: {
+                        fontSize: '14px',
+                    }
+                },
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: (value) => {
+                    return value + '%';
+                }
+            },
+            colors: "#cc6f5f",
+            grid: {
+                show: true,
+                borderColor: '#cc6f5f',
+            },
+            responsive: [{
+                breakpoint: 500,
+                options: {
+                    chart: {
+                        width: '100%',
+                        height: '100%',
+                    }
+                },
+            }]
+        },
+    });
+
     return (
         <>
             <div className='container'>
-                <h3 className='text-center mb-3'>CONTENT RATINGS</h3>
-                <p align="justify" className='mb-4'>We evaluate the content of the responses not only by the best possible answer to that
+                <h3 className='text-center mb-3' style={{ color: "#0b3c47" }}>CONTENT RATINGS</h3>
+                <h6 align="justify" className='mb-4 text-secondary'>We evaluate the content of the responses not only by the best possible answer to that
                     question but using our context cloud we are further enhancing the accuracy of what of answers might be relevant to
                     what kind of situation. Any candidate taking time to understand and align to the context in which he is operating
                     and using industry specific terminologies to articulate his point of view is likely to do well in the content
                     ratings. The top cohort rating (A) on more than 75% of the questions denotes high degree of proficiency and
                     accuracy in his answers.
-                </p>
-                <table className="table table-bordered text-center">
-                    <thead className='table-secondary'>
+                </h6>
+                <table className="table table-bordered text-center" style={{ borderColor: "#cc6f5f" }}>
+                    <thead style={{ backgroundColor: "#cc6f5f" }}>
                         <tr>
                             <th scope="col">Match Score</th>
                             <th scope="col">Meaning</th>
@@ -39,8 +104,20 @@ const ContentRatings = () => {
                     </tbody>
                 </table>
                 <h5 className='mt-5 mb-3'>Question Specific Content Ratings :</h5>
-                <table className="table table-bordered text-center mb-5">
-                    <thead className='table-secondary'>
+                <div className='d-flex justify-content-center mx-auto mt-5'>
+                    <ReactApexChart
+                        setState={setState}
+                        options={state.options}
+                        series={state.series}
+                        type="bar"
+                        height={500}
+                        width={500}
+                        style={{ borderColor: "#000" }}
+                    />
+                </div>
+
+                {/* <table className="table table-bordered text-center mb-5" style={{ borderColor: "#c4933b" }}>
+                    <thead style={{ backgroundColor: "#c4933b" }}>
                         <tr>
                             <th scope="col">Question #</th>
                             <th scope="col">Rating</th>
@@ -56,7 +133,8 @@ const ContentRatings = () => {
                             <td>70%</td>
                         </tr>
                     </tbody>
-                </table>
+                </table> */}
+
                 <div className='card-footer border-dark text-end'>
                     <strong>Overall Content Rating :</strong> <code>Content_score</code> of a <code>Interaction_ID</code>
                 </div>
