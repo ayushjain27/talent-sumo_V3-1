@@ -1,5 +1,9 @@
+.row {
+  background-color: #97a39b;
+}
+
 @media (max-width: 770px) {
-  .header {
-    display: grid !important;
+  .row {
+    flex-direction: column-reverse;
   }
 }

@@ -1,0 +1,9 @@
+.card {
+    border-radius: 0;
+    border: none;
+}
+
+.cardHeader {
+    background-color: #97a39b !important;
+    border-radius: 0 !important;
+}

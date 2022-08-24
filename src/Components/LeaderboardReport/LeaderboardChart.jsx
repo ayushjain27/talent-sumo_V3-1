@@ -4,9 +4,9 @@ import styles from "./LeaderboardChart.module.css";
 const LeaderboardChart = () => {
   return (
     <>
-      <h3 className="text-center mb-3">LEADERBOARD CHART-1</h3>
-      <table className='table table-bordered text-center'>
-        <thead className="table-secondary">
+      <h3 className="text-center mb-3" style={{ color: "#0b3c47" }}>LEADERBOARD CHART-1</h3>
+      <table className='table table-bordered text-center' style={{ borderColor: "#cc6f5f" }}>
+        <thead style={{ backgroundColor: "#cc6f5f" }}>
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Likeability</th>
@@ -43,9 +43,9 @@ const LeaderboardChart = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="text-center mt-5 mb-3">LEADERBOARD CHART-2</h3>
-      <table className={`${styles.table} table  table-bordered text-center`}>
-        <thead className="table-secondary">
+      <h3 className="text-center mt-5 mb-3" style={{ color: "#0b3c47" }}>LEADERBOARD CHART-2</h3>
+      <table className={`${styles.table} table  table-bordered text-center`} style={{ borderColor: "#c4933b" }}>
+        <thead style={{ backgroundColor: "#c4933b" }}>
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Content_Score</th>

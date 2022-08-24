@@ -3,10 +3,6 @@
 }
 
 @media (max-width: 770px) {
-  .heading {
-    width: auto;
-  }
-
   .row {
     flex-direction: column-reverse;
   }

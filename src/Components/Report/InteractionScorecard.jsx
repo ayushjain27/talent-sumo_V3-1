@@ -90,7 +90,7 @@ const InteractionScorecard = () => {
             <div className="row mt-5">
                 <div className="img-fluid col-md-6 m-auto">
                     <ReactApexChart
-                        className=""
+                        // eslint-disable-next-line
                         setState={setState}
                         options={state.options}
                         series={state.series}
