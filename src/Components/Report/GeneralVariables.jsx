@@ -152,7 +152,7 @@ const GeneralVariables = () => {
                                         <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                         <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <p className='text-center'>50 to 250 words per minute</p>
+                                    <input type="range" className="form-range" value={15} step="0.5" id="customRange2" disabled />
                                 </div>
                                 <h6 align="justify" className='card-text'>
                                     <strong>Takeaway : </strong> Speaking too slowly or too quickly denotes nervousness on part of the candidate. Please note that this is the average pace across the entire Interaction. This will help you determine if you need to control the pace as you go through the Interactions. (We have provided an ideal benchmark range for comparison purposes)

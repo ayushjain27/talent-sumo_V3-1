@@ -11,3 +11,7 @@
     background-color: #97a39b !important;
     border-radius: 0 !important;
 }
+
+.range {
+    --thumb-color: #97a39b;
+}

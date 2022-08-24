@@ -9,7 +9,7 @@ const InteractionScorecard = () => {
     const [state, setState] = useState({
         series: [{
             name: 'Series 1',
-            data: [5, 4, 3, 2, 1, 0],
+            data: [4, 2, 3, 2, 1, 1],
         }],
         options: {
             chart: {
@@ -29,7 +29,8 @@ const InteractionScorecard = () => {
                 colors: ['#ff6384'],
             },
             fill: {
-                opacity: 0,
+                opacity: 0.5,
+                colors: ['#ff6384'],
             },
             dataLabels: {
                 enabled: true,

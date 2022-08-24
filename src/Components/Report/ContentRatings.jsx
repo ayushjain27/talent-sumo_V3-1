@@ -7,7 +7,7 @@ const ContentRatings = () => {
     const [state, setState] = useState({
         series: [{
             name: "rating",
-            data: [40, 70, 50, 60, 90, 30]
+            data: [40, 70, 50, 60, 90, 30, 47, 85, 91, 15]
         }],
         options: {
             chart: {
@@ -20,7 +20,7 @@ const ContentRatings = () => {
             },
             xaxis: {
                 type: 'category',
-                categories: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
+                categories: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10'],
                 title: {
                     text: 'Number of Questions',
                     style: {
@@ -30,12 +30,6 @@ const ContentRatings = () => {
             },
             yaxis: {
                 show: true,
-                labels: {
-                    show: true,
-                    formatter: (value) => {
-                        return value + '%';
-                    }
-                },
                 title: {
                     text: 'Rating in %',
                     style: {
@@ -49,6 +43,11 @@ const ContentRatings = () => {
                     return value + '%';
                 }
             },
+            // plotOptions: {
+            //     bar: {
+            //         horizontal: true
+            //     }
+            // },
             colors: "#cc6f5f",
             grid: {
                 show: true,
