@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Dashboard.module.css';
 import dashboard from '../../assets/Images/dashboard.png';
-import img1 from '../../assets/Images/img-1.png';
-import img2 from '../../assets/Images/img-2.png';
-import img3 from '../../assets/Images/img-3.png';
+import img1 from '../../assets/Images/img-1.gif';
+import img2 from '../../assets/Images/img-2.gif';
+import img3 from '../../assets/Images/img-3.gif';
 
 import { useNavigate } from 'react-router-dom';
 
