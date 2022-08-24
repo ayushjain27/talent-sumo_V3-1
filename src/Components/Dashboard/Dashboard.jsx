@@ -41,11 +41,14 @@ const Dashboard = () => {
                     <div className="col-md-5 m-auto">
                         <div className={`${styles.cardCarousel} card border-dark`}>
                             <div className="card-body">
-                                <Carousel autoFocus={true} emulateTouch={true}
+                                <Carousel
+                                    autoFocus={true}
+                                    emulateTouch={true}
                                     infiniteLoop={true}
                                     showStatus={false}
                                     stopOnHover={true}
-                                    showThumbs={false} autoPlay={true}>
+                                    showThumbs={false}
+                                    autoPlay={true}>
                                     <div>
                                         <img src={img1} className='img-fluid' alt='img-1' />
                                     </div>
