@@ -229,7 +229,7 @@ const GeneralVariables = () => {
                     <h5 className={`${styles.cardHeader} card-header text-white`}><SiGrammarly className={`${styles.icon} me-1`} />Grammar and Accent Score</h5>
                     <div className="card-body">
                         <h6 align="justify" className='card-text'>
-                            <strong>Grammar and Accent Score : </strong>Sentiment_score
+                            <strong>Grammar and Accent Score : </strong>grammar_score
                         </h6>
                         <div className="progress mb-3">
                             <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>

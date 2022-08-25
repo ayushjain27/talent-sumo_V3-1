@@ -8,7 +8,7 @@ const FeedbackSnapshot = () => {
                     <div className="card-body" style={{ color: "#0b3c47" }}>
                         <h3 className='card-title text-center'>FEEDBACK SNAPSHOT</h3>
                         <p align="justify">Our models suggest an overall rating of
-                            “Interaction_score”,"Interaction_ID" for the
+                            “((Interaction_score))”,"((Interaction_ID))" for the
                             candidate. Based on the responses, we also report
                             a comprehensive rating of the candidate across
                             multiple skill dimensions  (these are elaborated

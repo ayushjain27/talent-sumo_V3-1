@@ -32,16 +32,16 @@ const InteractionScorecard = () => {
                 opacity: 0.5,
                 colors: ['#ff6384'],
             },
-            dataLabels: {
-                enabled: true,
-                background: {
-                    enabled: true,
-                    borderRadius: 2,
-                },
-                style: {
-                    colors: ['#ff6384']
-                }
-            },
+            // dataLabels: {
+            //     enabled: true,
+            //     background: {
+            //         enabled: true,
+            //         borderRadius: 2,
+            //     },
+            //     style: {
+            //         colors: ['#ff6384']
+            //     }
+            // },
             plotOptions: {
                 radar: {
                     polygons: {

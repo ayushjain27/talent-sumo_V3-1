@@ -6,20 +6,21 @@ import report from "../../assets/Images/report.png"
 
 const Logo = () => {
 
-  const current = new Date();
-  const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+  // const current = new Date();
+  // const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
 
   return (
     <>
       <div className={`${styles.row} my-5 row`}>
         <h1 className="text-center my-3" style={{ color: "#f3c3a3" }}>
-          Interaction Title FEEDBACK REPORT
+          job_title FEEDBACK REPORT
         </h1>
         <div className="col-md-6 m-auto">
-          <h4>Interaction : <span className="text-white">Product Mgmt V1.0</span> </h4>
-          <h4>Date : <span className="text-white">{date}</span></h4>
+          {/* <h4>Interaction : <span className="text-white">Product Mgmt V1.0</span> </h4> */}
+          {/* <h4>Date : <span className="text-white">{date}</span></h4> */}
+          <h4>Date : <span className="text-white">interaction.created_at(date)</span></h4>
+          <h4>CANDIDATE NAME : <span className="text-white">candidate_id.name</span></h4>
           <hr />
-          <h4>CANDIDATE NAME : <span className="text-white">Abc</span></h4>
           <Link to="/response">
             <h5 className="text-primary text-decoration-underline" style={{ cursor: "pointer" }}>CANDIDATE RESPONSE</h5>
           </Link>
