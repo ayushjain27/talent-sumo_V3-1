@@ -4,6 +4,7 @@ import styles from "./GeneralVariables.module.css";
 import { AiFillDashboard } from "react-icons/ai";
 import { FaVolumeUp, FaCloud, FaRibbon } from "react-icons/fa";
 import { BsEmojiSmileFill } from "react-icons/bs";
+import { SiGrammarly } from "react-icons/si";
 
 import ReactApexChart from 'react-apexcharts';
 
@@ -152,7 +153,7 @@ const GeneralVariables = () => {
                                         <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                         <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <input type="range" className="form-range" value={15} step="0.5" id="customRange2" disabled />
+                                    <input type="range" className="form-range" value={109} min="50" max="250" id="customRange2" disabled />
                                 </div>
                                 <h6 align="justify" className='card-text'>
                                     <strong>Takeaway : </strong> Speaking too slowly or too quickly denotes nervousness on part of the candidate. Please note that this is the average pace across the entire Interaction. This will help you determine if you need to control the pace as you go through the Interactions. (We have provided an ideal benchmark range for comparison purposes)
@@ -167,12 +168,15 @@ const GeneralVariables = () => {
                                 <h6 align="justify" className='card-text'>
                                     <strong>Gesture Score : </strong>Estimated_Gesture_score
                                 </h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-success" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className='mb-3'>
+                                    <div className="progress">
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-success" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <input type="range" className="form-range" value={109} min="50" max="250" id="customRange2" disabled />
                                 </div>
                                 <h6 align="justify" className='card-text'>
                                     <strong>Takeaway : </strong>Hand gestures play an important part in your overall personality. Due to limitations of the
@@ -202,12 +206,15 @@ const GeneralVariables = () => {
                                 <h6 align="justify" className='card-text'>
                                     <strong>Aggregate dominant Sentiment : </strong>Sentiment_score
                                 </h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-success" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className='mb-3'>
+                                    <div className="progress">
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-success" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <input type="range" className="form-range" value={109} min="50" max="250" id="customRange2" disabled />
                                 </div>
                                 <h6 align="justify" className='card-text'>
                                     <strong>Takeaway : </strong>This shows how your emotions are understood by the people. While most candidates display
@@ -216,6 +223,31 @@ const GeneralVariables = () => {
                                 </h6>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className={`${styles.card} card border-dark h-100 mt-4`}>
+                    <h5 className={`${styles.cardHeader} card-header text-white`}><SiGrammarly className={`${styles.icon} me-1`} />Grammar and Accent Score</h5>
+                    <div className="card-body">
+                        <h6 align="justify" className='card-text'>
+                            <strong>Grammar and Accent Score : </strong>Sentiment_score
+                        </h6>
+                        <div className="progress mb-3">
+                            <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress-bar bg-success" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress-bar bg-warning" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress-bar bg-danger" role="progressbar" style={{ width: "20%" }} aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6 align="justify" className='card-text'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laboriosam enim atque omnis, facilis
+                            laudantium aliquam aperiam. Veniam autem ut ducimus iure, perferendis suscipit earum et, blanditiis
+                            nemo quis, dignissimos ad excepturi expedita laborum quibusdam quod magni odio quisquam vel rerum
+                            totam illum animi itaque sint. Inventore iure corporis suscipit consequatur eaque quis obcaecati
+                            unde atque, rem qui repellendus modi itaque repudiandae rerum explicabo aliquid ea sunt dignissimos
+                            deleniti excepturi necessitatibus! Quod rerum, consectetur, atque velit quis beatae nostrum illum
+                            facilis ab, suscipit culpa unde sequi! Suscipit vero et exercitationem id, eaque dignissimos fuga
+                            magnam eligendi aliquid reprehenderit quis. Eum.
+                        </h6>
                     </div>
                 </div>
                 <div className={`${styles.card} card border-dark h-100 mt-4`}>

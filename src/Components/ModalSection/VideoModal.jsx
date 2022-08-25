@@ -5,7 +5,7 @@ const VideoModal = () => {
     <>
       <div
         className="modal fade"
-        id="exampleModal"
+        id="videoModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"

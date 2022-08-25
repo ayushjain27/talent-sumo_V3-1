@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Certificate.module.css';
 
-import logo from '../../assets/Images/Create.svg';
+import logo from '../../assets/Images/Certificate.svg';
 
 const Certificate = () => {
     return (

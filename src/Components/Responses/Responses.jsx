@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './Responses.module.css';
 import VideoModal from '../ModalSection/VideoModal.jsx';
 import AudioModal from '../ModalSection/AudioModal.jsx';
+import ImageModal from '../ModalSection/ImageModal';
+import TextModal from '../ModalSection/TextModal';
 
 const Responses = () => {
     return (
@@ -40,7 +42,7 @@ const Responses = () => {
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
                         <h5 className='card-title'>Response Video</h5>
-                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" className='btn btn-secondary'>Play</button>
+                        <button data-bs-toggle="modal" data-bs-target="#videoModal" className='btn btn-secondary'>Play</button>
                     </div>
                 </div>
             </div>
@@ -49,7 +51,7 @@ const Responses = () => {
                 <div className={`${styles.card} card border-0`}>
                     <div className="card-body">
                         <h5 className='card-title'>Response Audio</h5>
-                        <button data-bs-toggle="modal" data-bs-target="#exampleModal1" className='btn btn-secondary'>Play</button>
+                        <button data-bs-toggle="modal" data-bs-target="#audioModal" className='btn btn-secondary'>Play</button>
                     </div>
                 </div>
             </div>
@@ -90,8 +92,28 @@ const Responses = () => {
                     </div>
                 </div>
             </div>
+            <div className={`${styles.container} container p-3 my-5`}>
+                <h5>Question-1 :</h5>
+                <div className={`${styles.card} card border-0`}>
+                    <div className="card-body">
+                        <h5 className='card-title'>Response Image</h5>
+                        <button data-bs-toggle="modal" data-bs-target="#imageModal" className='btn btn-secondary'>Play</button>
+                    </div>
+                </div>
+            </div>
+            <div className={`${styles.container} container p-3 my-5`}>
+                <h5>Question-1 :</h5>
+                <div className={`${styles.card} card border-0`}>
+                    <div className="card-body">
+                        <h5 className='card-title'>Response Text</h5>
+                        <button data-bs-toggle="modal" data-bs-target="#textModal" className='btn btn-secondary'>Play</button>
+                    </div>
+                </div>
+            </div>
             <VideoModal />
             <AudioModal />
+            <ImageModal />
+            <TextModal />
         </>
     )
 }
