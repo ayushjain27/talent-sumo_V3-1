@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './InteractionScorecard.module.css';
+// import styles from './InteractionScorecard.module.css';
 
 import ReactApexChart from 'react-apexcharts';
 
