@@ -88,23 +88,36 @@ const InteractionScorecard = () => {
     return (
         <>
             <h3 className='text-center mb-3' style={{ color: "#0b3c47" }}>INTERACTION SCORECARD</h3>
-            <div className="row mt-5">
-                <div className="img-fluid col-md-6 m-auto">
-                    <ReactApexChart
-                        // eslint-disable-next-line
-                        setState={setState}
-                        options={state.options}
-                        series={state.series}
-                        type="radar"
-                        style={{ borderColor: "#000" }}
-                    />
-                </div>
-                <div className={`${styles.right} col-md-6 m-auto`}>
-                    <div className="card border-0">
-                        <div className="card-body"></div>
+            <div className="container">
+                <div className="row mt-5">
+                    <div className="img-fluid col-md-6 m-auto">
+                        <ReactApexChart
+                            // eslint-disable-next-line
+                            setState={setState}
+                            options={state.options}
+                            series={state.series}
+                            type="radar"
+                            style={{ borderColor: "#000" }}
+                        />
+                    </div>
+                    <div className="col-md-6 m-auto">
+                        <div className="card border-0">
+                            <div className="card-body">
+                                <h6 align="justify" className='text-secondary'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laudantium mollitia amet id quaerat
+                                    voluptatum alias vel sapiente. Maiores eaque ab fugiat. Quibusdam delectus repellat esse porro qui,
+                                    est excepturi ad voluptate, sit, expedita at quae non deleniti perspiciatis sed temporibus. Neque
+                                    laborum a ab magni sunt laudantium debitis inventore blanditiis necessitatibus earum nobis ea nemo,
+                                    obcaecati eaque, in voluptates consequuntur dignissimos maxime quia exercitationem esse? Illo ullam,
+                                    doloribus quaerat cum soluta libero iure eveniet laboriosam quia atque minus earum perspiciatis fugiat
+                                    voluptatem deserunt voluptas voluptatum doloremque, vero ducimus fugit ipsam. Voluptas, accusamus?
+                                    Eligendi dolor dolore voluptates adipisci necessitatibus eum?
+                                </h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div >
+            </div>
             {/* <table className={`${styles.table} table table-bordered text-center mb-5`} style={{ borderColor: "#c4933b" }}>
                 <thead style={{ backgroundColor: "#c4933b" }}>
                     <tr>
