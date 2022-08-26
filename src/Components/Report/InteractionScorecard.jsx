@@ -9,7 +9,7 @@ const InteractionScorecard = () => {
     const [state, setState] = useState({
         series: [{
             name: 'Series 1',
-            data: [4, 2, 3, 2, 1, 1],
+            data: [4, 2, 3, 2, 1],
         }],
         options: {
             chart: {
@@ -53,7 +53,7 @@ const InteractionScorecard = () => {
                 }
             },
             xaxis: {
-                categories: ['Likeability', 'Charm', 'Energy', 'Fluency', 'Confidence', 'Content Score'],
+                categories: ['Likeability', 'Charm', 'Energy', 'Fluency', 'Confidence'],
                 labels: {
                     show: true,
                     style: {
@@ -99,6 +99,10 @@ const InteractionScorecard = () => {
                             type="radar"
                             style={{ borderColor: "#000" }}
                         />
+                        <p>"likeability_aggregate", "charm_aggregate", "energy_aggregate", "fluency_aggregate", "confidence_aggregate"</p>
+                        <p>Sum(likeability_per_question)/number of questions</p>
+                        <p>Sum(charm_per_question)/number of questions</p>
+                        <p> Sum(energy_per_question)/number of questions</p>
                     </div>
                     <div className="col-md-6 m-auto">
                         <div className="card border-0">

@@ -5,28 +5,157 @@ import ReactApexChart from 'react-apexcharts';
 const ContentRatings = () => {
 
     const [state, setState] = useState({
-        series: [{
-            name: "rating",
-            data: [40, 70, 50, 60, 90, 30, 47, 85, 91, 15]
-        }],
+        series: [
+            {
+                name: 'Actual',
+                data: [
+                    {
+                        x: 'Q1',
+                        y: 40,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q2',
+                        y: 70,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q3',
+                        y: 50,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q4',
+                        y: 60,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q5',
+                        y: 90,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q6',
+                        y: 30,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q7',
+                        y: 47,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q8',
+                        y: 85,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q9',
+                        y: 91,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Q10',
+                        y: 15,
+                        goals: [
+                            {
+                                name: 'Target Score',
+                                value: 90,
+                                strokeHeight: 5,
+                                strokeColor: '#000000'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
         options: {
             chart: {
-                type: 'bar',
                 height: "100%",
                 width: "100%",
+                type: 'bar',
                 toolbar: {
                     show: false,
                 },
             },
-            xaxis: {
-                type: 'category',
-                categories: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10'],
-                title: {
-                    text: 'Number of Questions',
-                    style: {
-                        fontSize: '14px',
-                    }
-                },
+            colors: ['#cc6f5f'],
+            dataLabels: {
+                enabled: true,
+                formatter: (value) => {
+                    return value + '%';
+                }
+            },
+            legend: {
+                show: true,
+                position: 'top',
+                showForSingleSeries: true,
+                customLegendItems: ['Actual Score', 'Target Score'],
+                markers: {
+                    fillColors: ['#cc6f5f', '#000000']
+                }
             },
             yaxis: {
                 show: true,
@@ -37,21 +166,14 @@ const ContentRatings = () => {
                     }
                 },
             },
-            dataLabels: {
-                enabled: true,
-                formatter: (value) => {
-                    return value + '%';
-                }
-            },
-            // plotOptions: {
-            //     bar: {
-            //         horizontal: true
-            //     }
-            // },
-            colors: "#cc6f5f",
-            grid: {
+            xaxis: {
                 show: true,
-                borderColor: '#cc6f5f',
+                title: {
+                    text: 'Number of Questions',
+                    style: {
+                        fontSize: '14px',
+                    }
+                },
             },
             responsive: [{
                 breakpoint: 500,
@@ -110,7 +232,7 @@ const ContentRatings = () => {
                         series={state.series}
                         type="bar"
                         height={500}
-                        width={500}
+                        width={1000}
                         style={{ borderColor: "#000" }}
                     />
                 </div>

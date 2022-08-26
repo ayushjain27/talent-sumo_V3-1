@@ -19,14 +19,14 @@ const Responses = () => {
                                 <label htmlFor="interactionTitle" className="col-sm-2 col-form-label fw-bold">Interaction Title : </label>
                                 <div className="col-sm-10">
                                     {/* <input type="text" className="form-control" id="interactionTitle" /> */}
-                                    <div tabIndex="-1" className="btn btn-light disabled placeholder" aria-hidden="true">interaction title</div>
+                                    <div tabIndex="-1" className="btn btn-light disabled placeholder" aria-hidden="true">job_title</div>
                                 </div>
                             </div>
                             <div className="row mb-3">
                                 <label htmlFor="candidateName" className="col-sm-2 col-form-label fw-bold">Candidate Name :</label>
                                 <div className="col-sm-10">
                                     {/* <input type="text" className="form-control" id="candidateName" /> */}
-                                    <div tabIndex="-1" className="btn btn-light disabled placeholder" aria-hidden="true">candidate name</div>
+                                    <div tabIndex="-1" className="btn btn-light disabled placeholder" aria-hidden="true">candidate_id.name</div>
                                 </div>
                             </div>
                             <div className="row mb-3">
