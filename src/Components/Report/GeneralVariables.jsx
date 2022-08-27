@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from "./GeneralVariables.module.css";
 
 import { AiFillDashboard } from "react-icons/ai";
@@ -6,7 +6,7 @@ import { FaVolumeUp, FaCloud, FaRibbon } from "react-icons/fa";
 import { BsEmojiSmileFill } from "react-icons/bs";
 import { SiGrammarly } from "react-icons/si";
 
-import ReactApexChart from 'react-apexcharts';
+// import ReactApexChart from 'react-apexcharts';
 
 const GeneralVariables = () => {
 

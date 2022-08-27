@@ -100,9 +100,9 @@ const InteractionScorecard = () => {
                             style={{ borderColor: "#000" }}
                         />
                         <p>"likeability_aggregate", "charm_aggregate", "energy_aggregate", "fluency_aggregate", "confidence_aggregate"</p>
-                        <p>Sum(likeability_per_question)/number of questions</p>
+                        {/* <p>Sum(likeability_per_question)/number of questions</p>
                         <p>Sum(charm_per_question)/number of questions</p>
-                        <p> Sum(energy_per_question)/number of questions</p>
+                        <p> Sum(energy_per_question)/number of questions</p> */}
                     </div>
                     <div className="col-md-6 m-auto">
                         <div className="card border-0">
