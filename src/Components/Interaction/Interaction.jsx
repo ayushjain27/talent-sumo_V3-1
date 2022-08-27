@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Interaction.module.css";
 import QuesAns from '../Modal/QuesAns'
 import Details from "./Details";
 
+import axios from "axios";
+
 import { Link } from 'react-router-dom'
 
 const Interaction = () => {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get('response.json')
+      .then(res => {
+        console.log(res.data.results);
+        setData(res.data.results);
+      })
+  });
+
   return (
     <>
       <h3 className="text-center mt-5 mb-4">INTERACTION</h3>
@@ -25,25 +38,30 @@ const Interaction = () => {
             </div>
           </div>
         </div>
-      </div>
+        <table className="table table-bordered mt-5 text-center">
+          <thead className="table-dark">
+            <tr>
+              <th scope="col">Test ID</th>
+              <th scope="col">Job/Course Title</th>
+              <th scope="col">Track</th>
+              <th scope="col">Candidate Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map(item => (
+              <tr>
+                <td data-bs-toggle="modal" data-bs-target="#exampleModal4" style={{ cursor: "pointer" }}>{item.id}</td>
+                <td>{item.job_title}</td>
+                <td>{item.track}</td>
+                <td>
+                  <Link to="/form" target="_blank">
+                    Link
+                  </Link></td>
+              </tr>
+            ))}
 
-      <div className={`${styles.container} container my-5`}>
-        <div className={`${styles.header} d-flex justify-content-center`}>
-          <div className={`${styles.heading} bg-dark text-white p-2`}>Test ID</div>
-          <div className={`${styles.heading} bg-dark text-white p-2`}>Job/Course Title</div>
-          <div className={`${styles.heading} bg-dark text-white p-2`}>Track</div>
-          <div className={`${styles.heading} bg-dark text-white p-2`}>Candidate Form</div>
-        </div>
-        <div className={`${styles.header} d-flex justify-content-center`}>
-          <div className={`${styles.heading} border border-dark p-2`} data-bs-toggle="modal" data-bs-target="#exampleModal4">5678</div>
-          <div className={`${styles.heading} border border-dark p-2`}>Abc</div>
-          <div className={`${styles.heading} border border-dark p-2`}>Learn HR</div>
-          <div className={`${styles.heading} text-primary border border-dark p-2`}>
-            <Link to="/form" target="_blank">
-              Link
-            </Link>
-          </div>
-        </div>
+          </tbody>
+        </table>
       </div>
       <QuesAns />
       <Details />
