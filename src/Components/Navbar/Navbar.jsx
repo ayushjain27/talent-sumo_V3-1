@@ -4,6 +4,7 @@ import styles from './Navbar.module.css';
 
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
 
+
 const Navbar = () => {
 
     const navigate = useNavigate();
@@ -28,7 +29,9 @@ const Navbar = () => {
 
             <nav className={`${styles.navbar} navbar navbar-expand-lg bg-white sticky-top`}>
                 <div className="container-fluid">
-                    <Link className="navbar-brand fw-bold fs-3" to="/">Talent <span className='bg-dark text-white p-2'>Sumo</span></Link>
+                    <Link className="navbar-brand fw-bold fs-3" to="/">
+                        <span className={`${styles.navbarBrand}`}>a</span>CLOUD
+                    </Link>
                     <button onClick={handleClick} className={`${styles.navbarToggler} navbar-toggler`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
                         {

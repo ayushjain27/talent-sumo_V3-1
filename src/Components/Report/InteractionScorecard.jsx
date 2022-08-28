@@ -108,14 +108,20 @@ const InteractionScorecard = () => {
                         <div className="card border-0">
                             <div className="card-body">
                                 <h6 align="justify" className='text-secondary'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laudantium mollitia amet id quaerat
-                                    voluptatum alias vel sapiente. Maiores eaque ab fugiat. Quibusdam delectus repellat esse porro qui,
-                                    est excepturi ad voluptate, sit, expedita at quae non deleniti perspiciatis sed temporibus. Neque
-                                    laborum a ab magni sunt laudantium debitis inventore blanditiis necessitatibus earum nobis ea nemo,
-                                    obcaecati eaque, in voluptates consequuntur dignissimos maxime quia exercitationem esse? Illo ullam,
-                                    doloribus quaerat cum soluta libero iure eveniet laboriosam quia atque minus earum perspiciatis fugiat
-                                    voluptatem deserunt voluptas voluptatum doloremque, vero ducimus fugit ipsam. Voluptas, accusamus?
-                                    Eligendi dolor dolore voluptates adipisci necessitatibus eum?
+                                    Every human interaction demonstrates what human resources experts define as power skills.
+                                    The attached spider chart demonstrates these traits that the AI models observe in the conversation.
+                                    Depending upon the particular context of the interaction we may or may not display certain traits.
+                                    Personality is not permanent and the models are a mere reflection of how you may be perceived by the others in the
+                                    particular interaction. This chart and report will help you to reflect deeply on your own performance. In overall
+                                    cohort scores in the power-skill areas are summarized as below.
+
+                                    <p className='text-danger mt-3'>(Please review the variable section below for more information) :</p>
+                                    <p> Likeability : likeability_agregate</p>
+                                    <p>Charm : charm_agreegate</p>
+                                    <p>Energy : energy_agreegate</p>
+                                    <p>Fluency: fluency_agreegate</p>
+                                    <p>Confidence: Confidence_agreegate</p>
+                                    <p>Change “Rating Variables” to Power-Skills</p>
                                 </h6>
                             </div>
                         </div>
